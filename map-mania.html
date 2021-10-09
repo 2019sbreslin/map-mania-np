@@ -4,12 +4,30 @@
     <head>
         <meta charset="UTF-8">
         <title>Map Mania </title>
-        <script src="map-mania.js"></script>
         <link rel="stylesheet" href="map-mania.css"> 
         <script src="map-mania.js" ></script>
+
+        <style>
+
+            #mapID {
+                height: 100%;
+                width: 100%;
+            }
+
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
     </head>
-    <body onload="init()">
-        <h1>Map Mania</h1>        
+    <body onload="initApplication()">
+        <h1>Map Mania</h1> 
+        
+        <div id="mapID"></div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUZZ5a-mzMDao_Z1tkdFilkIgLm78zI50&callback=initMap"
+        async defer>
+    </script>
     </body>
 </html>
 
